@@ -1,6 +1,7 @@
+// hello world at /home
 var express =  require("express")
 var app = express()
-app.get("/",function(req,res){
-    res.end("Hello World !")
+app.get("/home",function(req,res){
+    res.end("Hello World!")
 })
-app.listen(process.argv[2],localhost)
+app.listen(process.argv[2],"localhost")
