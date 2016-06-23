@@ -1,0 +1,12 @@
+# challenge 2
+# start mongod on port 27017
+# data as dbpath
+
+
+
+You may have to create the data directory.
+
+    mkdir data
+
+To start mongo on port 27017, run mongod --port 27017 --dbpath=./data.
+Added --smallfiles on c9
