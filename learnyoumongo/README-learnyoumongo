@@ -1,0 +1,7 @@
+git lognpm install -g learnyoumongo
+# fix mongod error
+#check ~/.bash_aliases
+c9 ~/.bash_aliases
+# also need to install locally to import module mongodb
+official solution
+https://github.com/evanlucas/learnyoumongo

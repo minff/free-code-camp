@@ -1,0 +1,32 @@
+
+# install git
+npm install -g git-it
+
+# add SSH to git
+# check for existing ssh key https://help.github.com/articles/checking-for-existing-ssh-keys/
+ls -al ~/.ssh
+# run ssh-agent in backgroud
+eval "$(ssh-agent -s)"
+# add private key to ssh-agent
+ssh-add ~/.ssh/id_rsa
+# add public key to git (copy and paste to git settings)
+cat ~/.ssh/id_rsa.pub
+
+# git init
+# cd to folder
+git init
+
+# config username, name, mail
+git config --global user.username minff
+git config --global user.name <name>
+git config --global user.email <mail>
+
+# remote to github
+git remote add origin https://github.com/minff/free-code-camp.git
+git push -u origin master
+
+# uninstall git-it
+npm rm -g git-it
+
+# how-to-npm
+npm install -g how-to-npm

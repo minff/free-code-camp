@@ -5,7 +5,6 @@
 // print out
 var mongo = require("mongodb").MongoClient
 var url = "mongodb://localhost:27017/learnyoumongo"
-mongo.connect()
 mongo.connect(url,function(err,db){
     var col = db.collection("parrots")
     col.find({
