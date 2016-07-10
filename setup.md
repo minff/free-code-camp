@@ -13,9 +13,29 @@ Install globally `-g`
 Add express to package.js dependency `--save`
 
 ## Git
+**Tips:**
++ How to force new line: type *space* twice, then *return*. [link](http://stackoverflow.com/questions/22385334/how-to-write-one-new-line-in-bitbucket-markdown)  
+### Branch timestamp-app  
+Add gitignore from https://github.com/github/gitignore/blob/master/Node.gitignore   
+`curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore > .gitignore`
 
+```
+cd ~/workspace/timestamp
 git init
-Add gitignore from https://github.com/github/gitignore/blob/master/Node.gitignore
-
-curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore > .gitignore
+git remote -t timestamp-app origin https://github.com/minff/free-code-camp.git
+git add .
+git commit -m "initial"
+git branch timestamp-app
+git push  (origin)
+```
+### Branch notes  
+```
+cd ~/workspace/notes
+git init
+git remote -t notes origin https://github.com/minff/free-code-camp.git
+git add .
+git commit -m "initial"
+git branch notes
+git push
+```
 
