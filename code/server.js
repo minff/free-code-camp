@@ -6,9 +6,9 @@ app.get("/:input",process_time)
 app.listen(port,host)
 
 function process_time(req,res){
-    var t=check_input(req)
+    var t=check_input_2(req)
     var res_obj
-    if (t){
+    if (!isNaN(t)){
         res_obj = {
             unix: t.getTime(), 
             natural: t.toString()
@@ -22,6 +22,14 @@ function process_time(req,res){
     }
     console.log(res_obj)
     res.end(JSON.stringify(res_obj))
+}
+function check_input_2(req){
+    var input = req.params.input
+    //replace if, conditional using or operation
+    // try all cases, without knowing which case works
+    var t = (Date.parse(input) && new Date (input)) || new Date(+input*(1+999 * (input.length<=10)))
+    console.log(t)
+    return t
 }
 function check_input(req){
     var input = req.params.input
@@ -38,7 +46,7 @@ function check_input(req){
         return t
     } else {
         console.log("not recognized input")
-        return false
+        return t
     }
     
 }
