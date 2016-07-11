@@ -12,6 +12,9 @@ npm link express --save
 Install globally `-g`
 Add express to package.js dependency `--save`
 
+To init node webapp  
+`npm init`
+
 ## Git
 **Tips:**
 + How to force new line: type *space* twice, then *return*. [link](http://stackoverflow.com/questions/22385334/how-to-write-one-new-line-in-bitbucket-markdown)  
