@@ -1,0 +1,27 @@
+{
+  "name": "header-parser",
+  "version": "1.0.0",
+  "description": "Parse header that shows ip addr, language, os",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minff/free-code-camp.git"
+  },
+  "keywords": [
+    "route",
+    "express",
+    "header",
+    "ip",
+    "os"
+  ],
+  "author": "minff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minff/free-code-camp/issues"
+  },
+  "homepage": "https://github.com/minff/free-code-camp#readme"
+}
