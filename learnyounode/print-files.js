@@ -10,7 +10,7 @@ module.exports = function (dir,ext,callback) {
             return callback(err,files);
         });
     }
-    
+// Resources: https://nodejs.org/api/modules.html
 // official solution
 //_/home/ubuntu/.nvm/versions/node/v4.4.3/lib/node_modules/learnyounode/exercises/make_it_modular/solution/solution_filter.js_ :  
    /*
